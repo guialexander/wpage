@@ -1,0 +1,142 @@
+.container_fot {
+    background-color: #3b302a;
+    display: flex;
+    padding: 2em 3em;
+    justify-content: space-between;
+    align-items: first baseline;
+    width: auto;
+
+  }
+
+  .fot {
+    width: 33.33%;
+    font-size: 1em;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .activate{
+    cursor: pointer;
+    width: 100%;
+    height: 40vh;
+    opacity: 7%;
+
+  }
+
+  .activate:checked ~ .fot_title_open {
+    display:none;
+  }
+
+
+  .contene {
+    background-color: #3b302a;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    padding: 2em 3em;
+    align-items: first baseline;
+    /* width: 100%; */
+  }
+
+  .contenedorRedes {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    color: aliceblue;
+  }
+
+  .fot_mapa img {
+    width: 100px; /* Ancho deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+
+
+
+  @media (max-width: 768px) {
+    .container_fot {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 85%;
+    }
+  .contene{
+    width: 74.5%;
+
+  }
+
+  .container_fot {
+    width: 74.5%;
+  }
+
+    .fot{
+      justify-content: center;
+      margin-bottom: 2em;
+    }
+
+    .fot_title_open{
+      display:none;
+
+      }
+    .fot_title_open.false{
+      display:none;
+
+      }
+
+    .fot_title_open.rica{
+      display: flex;
+      flex-direction: column;
+      font-size: .8em;
+      margin-bottom: 3em;
+
+
+    }
+    .fot_title_open.about{
+      display: flex;
+
+      flex-direction: column;
+      font-size: .8em;
+      margin-bottom: 3em;
+
+
+    }
+    .fot_title_open.our{
+      display: flex;
+
+      flex-direction: column;
+      font-size: .8em;
+      margin-bottom: 3em;
+
+
+
+    }
+    .fot_title_open.ulink{
+      display: flex;
+      flex-direction: column;
+      font-size: .8em;
+      margin-bottom: 3em;
+
+
+    }
+
+    .fot_title_open.newtopics{
+      display: flex;
+      flex-direction: column;
+      font-size: .8em;
+      margin-bottom: 3em;
+
+
+    }
+    .fot_title_open.dise{
+      display: flex;
+      flex-direction: column;
+      font-size: .8em;
+      margin-bottom: 3em;
+
+
+    }
+
+
+  }
