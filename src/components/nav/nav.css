@@ -3,17 +3,23 @@
 .nav{
     grid-area: nav;
     background: linear-gradient(90deg, #03228f 10%, #0e73e4 100%);
-    height: 30px;
+    height: 20%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
+.menu-trigger{
+    display: none;
+}
 
-.nav > ul {
+.menu-list {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     list-style: none;
+
 }
 
 .nav li{
@@ -40,6 +46,64 @@
 
 .nav a:hover{
     transform: scale(1.1, 1.1);
+    color: orange;
 }
 
+@media (max-width: 768px) {
+    .menu-list {
+        display: none; /* Oculta el menú por defecto */
+      }
+    .menu-trigger{
+        display: block;
+    }
+    .menu-list.show {
+        display: block; /* Muestra el menú cuando se activa la clase 'show-menu' */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin: 1.5em;
+        padding: 1em;
 
+      }
+
+      .hide-trigger {
+        display: none;
+      }
+
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      font-size-adjust: 1em;
+    }
+
+    .nav > ul > li {
+        margin-bottom: 5em; /* Ajusta el margen inferior entre los elementos NavLink */
+        padding: 5px;
+    }
+
+    .nav a {
+        display: block;
+        margin-left: 4em;
+        margin-right: 3 em;
+        font-size: 18px;
+        font-weight: lighter;
+        color: white;
+        text-decoration: none;
+        transition: all 300ms;
+        text-transform: uppercase;
+
+
+
+    }
+
+
+}
