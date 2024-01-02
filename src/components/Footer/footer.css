@@ -1,10 +1,11 @@
 .container_fot {
-    background-color: #3b302a;
+    background-color: #474646;
     display: flex;
     padding: 2em 3em;
     justify-content: space-between;
     align-items: first baseline;
     width: auto;
+    height: 10em;
 
   }
 
@@ -31,7 +32,7 @@
 
 
   .contene {
-    background-color: #3b302a;
+    background-color: #000000;
     display: flex;
     justify-content: space-between;
     color: aliceblue;
@@ -60,15 +61,16 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      width: 85%;
+
+      height: auto;
     }
   .contene{
-    width: 74.5%;
+    width: 100%;
 
   }
 
   .container_fot {
-    width: 74.5%;
+    width: 100%;
   }
 
     .fot{

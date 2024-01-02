@@ -21,7 +21,7 @@ function Footer() {
 
       <div className='container_fot'>
         <div className='fot' onClick={()=>handleClick('rica')}>
-          <p className='fot_title'>RICA</p>
+          <p className='fot_title'>WHALE SAS</p>
 
          <div className={`fot_title_open ${(isOpen === 'rica' )? 'rica':'false'}`} >
           <p>WHALE</p>
