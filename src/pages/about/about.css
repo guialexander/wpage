@@ -1,113 +1,83 @@
-.about--title {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.about-container {
-  display: grid;
-  color: black;
-  width: 370px;
-  margin-left: -15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-}
-
-ul{
-  list-style: none;
-}
-
-.about-container--img {
-  width: 250px;
-  margin-bottom: 20px;
-}
-
-.about-container__info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 10px;
-}
-
-.about-container--description {
-  width: 200px;
-  margin-top: 30px;
-  margin-left: 10px;
-}
-
-.about-container--description--name {
-  font-size: 18px;
-  margin-bottom: 20px;
-  width: 250px;
-}
-
-.about-container--description--text {
-  font-size: 15px;
-  margin-left: 40px;
-}
-
-.about-container__skills {
-  margin-top: 10px;
-}
-
-.about-container__skills--title {
-  margin-left: 40px;
-  margin-bottom: 10px;
-}
-
-.about-container__skills--list {
-  font-size: 15px;
-}
-
-.about-container__social {
-  margin-top: 20px;
-  font-size: 14px;
+.main__add-form {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  width: 300px;
-  color: black;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+  max-width: 400px;
 }
 
-.about-container__social a {
-  color: black;
+.Form__title {
+  font-size: 25px;
+  font-weight: bold;
+  color: orange;
 }
-a:hover {
-  color: rgb(190, 136, 34);
+
+.add-form__column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
 }
 
-@media (min-width: 576px) {
-  .about-container {
-    width: 100%;
-  }
+.add-form__label,
+.add-form__label--logo {
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: orange;
+  position: relative;
+  left: 20px;
+  top: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 0;
+}
 
-  .about-container--description {
-    width: 240px;
-    margin-left: 20px;
-  }
+.add-form__label--logo{
+  left: 60px;
+}
 
-  .about-container--description--name {
-    font-size: 25px;
-  }
+.add-form__input {
+  border-radius: 15px;
+  border-color: orange;
+  padding: 5px;
+  width: 220px;
+  background-color: aliceblue;
+}
 
-  .about-container--description--text {
-    font-size: 18px;
-  }
-  .about-container__skills--title {
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
+.options{
+  width: 230px;
+  border: 2px solid orange;
+}
 
-  .about-container__skills--list {
-    font-size: 18px;
-    /* margin-left: -40px; */
-    text-align: justify;;
-  }
+.container__filteradd--button {
+  background-color: rgb(196, 131, 11);
+  color: white;
+  border: 1px solid orange;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px auto;
+}
 
-  .about-container__social {
-    margin-top: 40px;
-    flex-wrap: nowrap;
-    font-size: 18px;
-    width: 400px;
+.container__filteradd--button:hover {
+  background-color: green;
+  color: white;
+  border: 1px solid orange;
+}
 
-  }
+
+
+.title-about_container__h1 {
+  font-size: 36px;
+  color: orange;
+  margin-bottom: 20px;
+
+}
+
+.title-about_container p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 20px;
 }
